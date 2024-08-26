@@ -1,9 +1,16 @@
-const repoName: string = 'antdv'
+const canvas = document.getElementById('myCanvas') as HTMLCanvasElement
 
-console.log(repoName)
+console.log(canvas)
 
-import { createApp } from 'vue'
-import App from './App.vue'
-const rootApp = createApp(App)
-
-rootApp.mount('#root-app')
+const ctx: CanvasRenderingContext2D | null = canvas.getContext(
+  '2d'
+) as CanvasRenderingContext2D
+ctx?.beginPath()
+ctx?.moveTo(100, 100)
+ctx?.lineTo(200, 200)
+ctx?.lineTo(100, 200)
+ctx.lineWidth = 3
+ctx.lineCap = 'round'
+ctx.lineJoin = 'round'
+ctx.setLineDash([15, 5])
+ctx.stroke()

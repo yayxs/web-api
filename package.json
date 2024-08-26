@@ -1,27 +1,16 @@
 {
-  "name": "ant-design-vue-pro-max",
-  "version": "0.0.0",
-  "description": "use ant-design-vue like a pro",
+  "name": "web-api",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "web api learn",
   "scripts": {
-    "dev": "vite",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./"
+    "dev": "vite dev"
   },
   "keywords": [],
   "author": "venlee",
   "devDependencies": {
-    "@vitejs/plugin-legacy": "^2.2.0",
-    "@vitejs/plugin-vue": "^3.1.2",
-    "@vitejs/plugin-vue-jsx": "^2.0.1",
-    "eslint": "^8.26.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.7.1",
-    "unplugin-vue-components": "^0.22.9",
-    "vite": "^3.1.8"
-  },
-  "dependencies": {
-    "@vueuse/core": "^9.4.0",
-    "ant-design-vue": "^3.2.13",
-    "vue": "^3.2.41"
+    "@types/node": "^22.5.0",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.2"
   }
 }
